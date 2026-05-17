@@ -19,6 +19,25 @@ let today = "";
 */
 
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+if(urlParams.has("day")){
+    //retrieve data from queryString
+    myDay = urlParams.get("day");
+}
+
+//turn string into integer
+myDay = parseInt(myDay);
+
+
+//logic for displaying content depending on day
 switch(myDay){
 
  	case 0:
@@ -87,7 +106,7 @@ switch(myDay){
             name:"Frappuccino",
             pic:"frappaccino.jpg",
             alt:"A tall cup of frappuccino",
-            color:"white",
+            color:"DarkCyan",
             day:"Friday",
             desc:`ice blends with cream and sugar to fill a cup with dreams`
         };
@@ -111,10 +130,19 @@ switch(myDay){
 
 console.log(coffee);
 
-alert(coffeeTemplate(coffee));
+//alert(coffeeTemplate(coffee));
 
+//change content depending on day
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+
+//change background color
 document.querySelector("html").style.backgroundColor = coffee.color;
+
+//turn strong tags inside targeted div to coffee color //el = element
+document.querySelectorAll("#coffee-cup strong").forEach(el => {
+    el.style.color = coffee.color;
+});
+
 
 function coffeeTemplate(coffee){
     let myReturn = "";
