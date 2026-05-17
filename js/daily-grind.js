@@ -1,5 +1,6 @@
 let myDate = new Date();
-let myDay = myDate.getDay();
+//let myDay = myDate.getDay();
+let myDay = 0;
 let today = "";
 
 /*
@@ -23,6 +24,26 @@ switch(myDay){
 
  	case 0:
     	today = "Sunday";
+        coffee = {
+            name:"Pumpkin Spice Latte",
+            pic:"pumpkin-spice-latte.jpg",
+            alt:"A ceramic mug filled with pumpkin spice latte, topped with whipcream",
+            color:"orange",
+            day:"Sunday",
+            desc:`the pumpkins foster a spicy reprieve`
+        };
+ 	break;
+
+    case 1:
+   	    today = "Monday";
+        coffee = {
+            name:"Cold Brew",
+            pic:"cold-brew.jpg",
+            alt:"Two glasses of cold brew coffee",
+            color:"brown",
+            day:"Monday",
+            desc:`the coffee grounds slumber in cool waters`
+        };
  	break;
 
  	case 2:
@@ -33,7 +54,43 @@ switch(myDay){
             alt:"A glass of Bubble Tea",
             color:"pink",
             day:"Tuesday",
-            desc:`Bubble Tea! Awesome! Hooray!`
+            desc:`tapioca pearls tumble through the milky abyss.`
+        };
+ 	break;
+
+    case 3:
+   	    today = "Tuesday";
+        coffee = {
+            name:"Bubble Tea",
+            pic:"bubble-tea.jpg",
+            alt:"A glass of Bubble Tea",
+            color:"pink",
+            day:"Tuesday",
+            desc:`tapioca pearls tumble through the milky abyss.`
+        };
+ 	break;
+
+    case 2:
+   	    today = "Tuesday";
+        coffee = {
+            name:"Bubble Tea",
+            pic:"bubble-tea.jpg",
+            alt:"A glass of Bubble Tea",
+            color:"pink",
+            day:"Tuesday",
+            desc:`tapioca pearls tumble through the milky abyss.`
+        };
+ 	break;
+
+    case 2:
+   	    today = "Tuesday";
+        coffee = {
+            name:"Bubble Tea",
+            pic:"bubble-tea.jpg",
+            alt:"A glass of Bubble Tea",
+            color:"pink",
+            day:"Tuesday",
+            desc:`tapioca pearls tumble through the milky abyss.`
         };
  	break;
 
@@ -56,7 +113,8 @@ function coffeeTemplate(coffee){
 		<img src="images/${coffee.pic}" alt="${coffee.alt}" 
         id="coffee">
 		<strong>${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is 
-        <strong>${coffee.name}</strong> ${coffee.day}
+        <strong>${coffee.name}</strong>
+        <br>On ${coffee.day}, ${coffee.desc}
 	</p>`;
 
     return myReturn;
