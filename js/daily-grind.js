@@ -1,6 +1,5 @@
 let myDate = new Date();
-//let myDay = myDate.getDay();
-let myDay = 0;
+let myDay = myDate.getDay();
 let today = "";
 
 /*
@@ -59,38 +58,50 @@ switch(myDay){
  	break;
 
     case 3:
-   	    today = "Tuesday";
+   	    today = "Wednesday";
         coffee = {
-            name:"Bubble Tea",
-            pic:"bubble-tea.jpg",
-            alt:"A glass of Bubble Tea",
-            color:"pink",
-            day:"Tuesday",
-            desc:`tapioca pearls tumble through the milky abyss.`
+            name:"Mocha",
+            pic:"mocha.jpg",
+            alt:"A mug of mocha",
+            color:"blue",
+            day:"Wednesday",
+            desc:`something really cool happens, and mocha is involved`
         };
  	break;
 
-    case 2:
-   	    today = "Tuesday";
+    case 4:
+   	    today = "Thursday";
         coffee = {
-            name:"Bubble Tea",
-            pic:"bubble-tea.jpg",
-            alt:"A glass of Bubble Tea",
-            color:"pink",
-            day:"Tuesday",
-            desc:`tapioca pearls tumble through the milky abyss.`
+            name:"Drip",
+            pic:"drip.jpg",
+            alt:"A small cup of drip coffee",
+            color:"green",
+            day:"Thursday",
+            desc:`energy itself is extracted from the bean, and dripped into your soul`
         };
  	break;
 
-    case 2:
-   	    today = "Tuesday";
+    case 5:
+   	    today = "Friday";
         coffee = {
-            name:"Bubble Tea",
-            pic:"bubble-tea.jpg",
-            alt:"A glass of Bubble Tea",
-            color:"pink",
-            day:"Tuesday",
-            desc:`tapioca pearls tumble through the milky abyss.`
+            name:"Frappuccino",
+            pic:"frappaccino.jpg",
+            alt:"A tall cup of frappuccino",
+            color:"white",
+            day:"Friday",
+            desc:`ice blends with cream and sugar to fill a cup with dreams`
+        };
+ 	break;
+
+    case 6:
+   	    today = "Saturday";
+        coffee = {
+            name:"Caramel Latte",
+            pic:"caramel-latte.jpg",
+            alt:"A tall glass of caramel latte",
+            color:"BurlyWood",
+            day:"Saturday",
+            desc:`caramel sauce simmers in vanilla and milk. It's pretty yummy, some would say`
         };
  	break;
 
